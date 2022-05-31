@@ -1,0 +1,156 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffff;
+}
+.header-container{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+}
+
+.menu{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-content{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.menu-content img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.menu-content img:hover{
+    background-color: gray;
+    border-radius: 50%;
+    padding: 2px;
+    width: 23px;
+}
+.menu-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-content a:hover{
+    text-decoration: underline;
+}
+.menu-content p{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(104, 51, 155);
+    color: white;
+}
+
+.menu-content p:hover{
+    background-color: rgb(155, 43, 170);
+}
+
+.section-container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+section img{
+    width: 50%;
+    height: 92px;
+    margin-top: 120px;
+}
+.input-area {
+    margin-top: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    display: flex;
+    width: 482px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+input {
+    border: none;
+    margin-left: 20px;
+    outline: 0;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 380px;
+}
+
+.header-container, .favorites{
+    font-size: 14px;
+}
+
+.favorites{
+    height: 200px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.favorites img{
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    height: 35px;
+}
+
+.favorites p{
+    text-align: center;
+}
+
+.favorites img:hover{
+    background-color: #dfe1e5;
+}
+
+.footer-area{
+    display: flex;
+}
+footer{
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+button{
+    border-radius:15px ;
+    padding: 8px;
+    border: none;
+    font-size: 13px;
+    color: rgb(29, 29, 236);
+    background-color: white;
+    box-shadow: 2px 1px lightslategray;
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    .header-container{
+        justify-content: space-evenly;
+    }
+    .input-area{
+        width: 250px;
+    }
+
+    input{
+        width: 250px;
+    }
+
+    button{
+        display: none;
+    }
+}
