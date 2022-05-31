@@ -142,12 +142,20 @@ button{
     .header-container{
         justify-content: space-evenly;
     }
+
+    .section-container{
+        align-items: center;
+    }
     .input-area{
         width: 250px;
     }
 
     input{
         width: 250px;
+    }
+    .favorites{
+        flex: 1;
+        flex-wrap: wrap;
     }
 
     button{
